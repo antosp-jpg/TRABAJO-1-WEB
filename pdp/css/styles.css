@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.slick-prev,
+.slick-next {
+    color: #080808; /* Cambia esto por el color que desees */
+}
+
+.slick-prev,
+.slick-next {
+    color: #040303; /* Color de las flechas */
+}
+
+.Similar{
+    background-color: aqua;
+}
