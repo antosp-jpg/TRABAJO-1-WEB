@@ -6,6 +6,36 @@
 }
 
 
+
+@font-face {
+    font-family:'Caslon';
+    src: url(fonts/caslon/LibreCaslonCondensed-SemiBold.woff2);
+}
+
+@font-face {
+    font-family:'Azaret';
+    src: url(fonts/azaret/AzeretMono-Black.woff);
+}
+
+
+:root {
+    /* COLORES PRIMARIOS */
+    --color1: #EE96BD;
+    --color2: #A3235C;
+    --color3: #600D32;
+    --color4: #F79D5C;
+    --color5: #08a524;
+    --color6: #F9F6EE;
+    /* TIPOGRAFÍAS */
+    --tipoTitulos: 'Azaret', sans-serif;
+    --tipoGeneral: 'Caslon', serif;
+  }
+
+h1 {
+    font-family: var(--tipoGeneral);
+}
+
+
 .bg-video-header {
     position: relative;
     width: 100vw;
