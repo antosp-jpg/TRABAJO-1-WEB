@@ -5,16 +5,20 @@
     scroll-behavior: smooth;
 }
 
-
-
 @font-face {
     font-family:'Caslon';
     src: url(fonts/caslon/LibreCaslonCondensed-SemiBold.woff2);
 }
 
 @font-face {
-    font-family:'Azaret';
-    src: url(fonts/azaret/AzeretMono-Black.woff);
+    font-family:'Caslon Cursive';
+    src: url(fonts/caslon/LibreCaslonCondensed-BoldItalic.woff2);
+
+}
+
+@font-face {
+    font-family:'Satoshi';
+    src: url(fonts/satoshi/Satoshi-Black.ttf);
 }
 
 
@@ -24,17 +28,83 @@
     --color2: #A3235C;
     --color3: #600D32;
     --color4: #F79D5C;
-    --color5: #08a524;
+    --color5: #050505;
     --color6: #F9F6EE;
     /* TIPOGRAFÍAS */
-    --tipoTitulos: 'Azaret', sans-serif;
+    --tipoTitulos: 'Satoshi', sans-serif;
     --tipoGeneral: 'Caslon', serif;
   }
 
-h1 {
+body {
+    background-color: var(--color6);
+}
+
+
+
+.casloncursive {
+    font-family:'Caslon Cursive';
+}
+
+/* PERSONALIZACIÓN BOTON PRIMARIO BOOTSTRAP */
+  .btn-primary {
+    color: var(--color6);
+    background-color: var(--color2);
+    border-color: var(--color2);
+  }
+
+  .btn-primary:hover {
+    color: var(--color3);
+    background-color: var(--color1);
+    border-color: var(--color1);
+  }
+
+/* PERSONALIZACION MENU */
+.nav-link {
+    color: var(--color6);
+}
+
+/* PERSONALIZACION HERO */
+.welcome {
+    font-size: 75pt;
+    color: var(--color6);
+    font-family: var(--tipoTitulos);
+}
+
+/* PERSONALIZACIÓN BOTONES + HOVER */
+#mission i {
+    color: var(--color2);
+    font-size: 40pt;
+    margin-top: 10pt;
+}
+
+#mission i:hover {
+    color: var(--color1);
+    font-size: 40pt;
+}
+
+.claim {
+    color: var(--color6);
+    font-family: var(--tipoGeneral);
+    font-size: 30pt;
+}
+
+p {
     font-family: var(--tipoGeneral);
 }
 
+h1 {
+    font-family: var(--tipoTitulos);
+    font-size: 40pt;
+    color: var(--color2);
+    text-transform: uppercase;
+    margin: 20pt;
+}
+
+
+h2 {
+    font-family: var(--tipoTitulos);
+    color: var(--color1);
+}
 
 .bg-video-header {
     position: relative;
@@ -62,4 +132,10 @@ h1 {
     width: 100%;
     height: 100%;
     z-index: 2;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color3);
+    color: var(--color6);
 }

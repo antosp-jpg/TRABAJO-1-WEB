@@ -16,6 +16,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- FAVICON ACTUALIZAR CUANDO ESTÉ EL LOGO -->
     <link href="media/img/favicon.png" rel="icon" type="image/png" />
+
+    <!-- FONTAWESOME ICONS -->
+    <script src="https://kit.fontawesome.com/6a24ca476b.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
     <!-- NAVBAR BOOTSTRAP -->
@@ -30,16 +35,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Mission</a>
+                <a class="nav-link" href="#mission">Mission</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Starred</a>
+                <a class="nav-link" href="#starred">Starred</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Community</a>
+                <a class="nav-link" href="#community">Community</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Store</a>
+                <a class="nav-link" href="#store">Store</a>
               </li>
 
             </ul>
@@ -54,9 +59,9 @@
       <source src="media/video/videoheader.mp4" type="video/mp4">
   </video>
   <div class="h-100 d-flex justify-content-center align-items-center overlay">
-      <div class="text-center text-white">
-          <h1 class="display-4">WELCOME TO</h1>
-          <p class="lead">Descripción o texto opcional.</p>
+      <div class="text-center">
+          <h1 class="welcome">WELCOME TO <span class="casloncursive">RITUAL</span></h1>
+          <p class="claim">Where every cup is a moment worth savoring.</p>
           <a href="#contenido" class="btn btn-primary mt-4">Más información</a>
       </div>
   </div>
@@ -64,27 +69,26 @@
 
 
 <!--MISSION SECTION-->
-<section class="mission">
+<section id="mission">
 <div class="container text-center">
 <h1> Our mission</h1>
 </div>
 <div class="container text-center">
-
-<div class="row">
-    <div class="col">
+<div class="row gx-5 justify-content-between">
+    <div class="col d-flex flex-column justify-content-between">
         <h2>Sustainability</h2>
         <p>We prioritize the environment, using biodegradable packaging and partnering with sustainable suppliers to positively impact the planet.</p>
-        <img src="media/img/logo.png" alt="" width="30" height="24">
+        <i class="fa-solid fa-leaf"></i>
         </div>
-        <div class="col">
+        <div class="col d-flex flex-column justify-content-between">
             <h2>Quality</h2>
             <p>We are dedicated to exceptional coffee quality, sourcing beans from ethical farms and roasting them to bring out their best flavors for a perfect cup every time.</p>
-            <img src="media/img/logo.png" alt="" width="30" height="24">
+            <i class="fa-solid fa-medal"></i>
             </div>
-            <div class="col">
+            <div class="col d-flex flex-column justify-content-between">
                 <h2>Wellness</h2>
                 <p>Your well-being matters to us. From offering wholesome, nutritious options to creating a calming atmosphere, we strive to make each visit a moment of relaxation and renewal.</p>
-                <img src="media/img/logo.png" alt="" width="30" height="24">
+                <i class="fa-solid fa-heart"></i>
                 </div>
 
             </div>
@@ -94,7 +98,7 @@
 
 <!--STARRED SECTION-->
 
-<section class="Starred">
+<section id="starred">
   <div>
     <div class="container text-center">
     <h1>Starred</h1>
@@ -112,8 +116,8 @@
     </div>
     <div class="row">
       <div class="col-6 align-self-center"  >
-        <h2>Product 2 </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae nesciunt quidem et veritatis optio voluptatum culpa reiciendis fugit distinctio ullam, vero cum aliquam libero totam qui modi saepe voluptatibus.</p>
+        <h2>Matcha Latte </h2>
+        <p>Savor our Matcha Latte**, a creamy blend of premium matcha and steamed milk that offers a perfect balance of earthy richness and sweetness. Packed with antioxidants, it's a delightful drink that boosts focus and wellness in every sip!</p>
         <button type="button" class="btn btn-primary">View details</button>
       </div>
       <div class="col-6">
@@ -135,7 +139,7 @@
 </section>
 
 <!--COMMUNITY SECTION-->
-<section class="Community">
+<section id="community">
   <div class="container text-center">
   <h1> Our community</h1>
   </div>
@@ -149,9 +153,9 @@
       <div> <img src="media/img/stockcafe.jpg" alt="" ></div>
       </div>
   
-
+    </section>
 <!--STORES SECTION-->
-<section class="Store">
+<section id="store">
   <div class="container text-center">
     <h1>Store</h1>
   </div>
@@ -160,7 +164,7 @@
 <!--FOOTER SECTION-->
 <footer>
   <div class=".container-fluid">
-    <div class="row text-center">
+    <div class="row">
       <div class="col">
         <p>Cookies</p>
         <p>Politica de Privacidad</p>
