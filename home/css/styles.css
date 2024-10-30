@@ -38,7 +38,10 @@
 body {
     background-color: var(--color6);
 }
-
+ img{
+    width: 100%;
+    
+ }
 
 
 .casloncursive {
