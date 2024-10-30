@@ -1,10 +1,13 @@
 
 $('.responsive').slick({
-    dots: true,
-    infinite: false,
+  arrows: false,
+    dots: false,
+    infinite: true,
     speed: 300,
+    autoplay: true,
+    autoplaySpeed: 2000,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
