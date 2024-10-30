@@ -20,6 +20,10 @@
     src: url(fonts/HelveticaNow/HelveticaNowDisplay-Regular.woff);
 }
 
+@font-face {
+    font-family:'Helvetica Light';
+    src: url(fonts/HelveticaNow/HelveticaNowDisplay-Light.woff);
+}
 
 :root {
     /* COLORES PRIMARIOS */
@@ -29,6 +33,7 @@
     --tipoTitulos: 'Helvetica Bold', sans-serif;
     --tipoSubtitulos: 'Helvetica Medium', sans-serif;
     --tipoGeneral: 'Helvetica Regular', sans-serif;
+    --tipoLight: 'Helvetica Light', sans-serif;
   }
 
 body {
@@ -41,7 +46,15 @@ body {
     vertical-align: middle;
  }
 
+.prueba {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 
+.prueba img {
+    width: 35%;
+}
 
 /* PERSONALIZACIÓN BOTON PRIMARIO BOOTSTRAP */
   .btn-primary {
@@ -51,11 +64,20 @@ body {
   }
 
   .btn-primary:hover {
-    color: var(--color3);
+    color: var(--color2);
     background-color: var(--color1);
     border-color: var(--color1);
   }
 
+  .btn-primary:active {
+    color:white;
+    background-color: #CD5C5C;
+    border-color: #CD5C5C;
+  }
+
+  
+
+  
 /* PERSONALIZACION MENU */
 .nav-link {
     color: var(--color1);
@@ -82,9 +104,10 @@ body {
 }
 
 .claim {
-    color: var(--color6);
-    font-family: var(--tipoGeneral);
-    font-size: 30pt;
+    color: var(--color1);
+    font-family: var(--tipoLight);
+    font-size: 20pt;
+    padding-top: 1em;
 }
 
 p {
