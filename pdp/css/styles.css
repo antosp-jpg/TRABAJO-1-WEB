@@ -26,6 +26,103 @@ form{
     width: 70vw;
     height: 49vw;
 }
-img{
-    width: 100%
+
+
+@font-face {
+    font-family:'Helvetica Bold';
+    src: url(fonts/HelveticaNow/HelveticaNowDisplay-Bold.woff2);
+}
+
+@font-face {
+    font-family:'Helvetica Medium';
+    src: url(fonts/HelveticaNow/HelveticaNowDisplay-Medium.woff);
+}
+
+@font-face {
+    font-family:'Helvetica Regular';
+    src: url(fonts/HelveticaNow/HelveticaNowDisplay-Regular.woff);
+}
+
+@font-face {
+    font-family:'Helvetica Light';
+    src: url(fonts/HelveticaNow/HelveticaNowDisplay-Light.woff);
+}
+
+:root {
+    /* COLORES PRIMARIOS */
+    --color1: #f5f5f5;
+    --color2: #1E1E1E;
+    /* TIPOGRAFÍAS */
+    --tipoTitulos: 'Helvetica Bold', sans-serif;
+    --tipoSubtitulos: 'Helvetica Medium', sans-serif;
+    --tipoGeneral: 'Helvetica Regular', sans-serif;
+    --tipoLight: 'Helvetica Light', sans-serif;
+  }
+
+body {
+    background-color: var(--color1);
+    overflow-x: hidden;
+}
+
+ img{
+    width: 100%;
+    vertical-align: middle;
+ }
+  
+
+  
+/* PERSONALIZACION MENU */
+.nav-link {
+    color: var(--color1);
+    font-family: var(--tipoSubtitulos);
+}
+
+
+
+p {
+    font-family: var(--tipoGeneral);
+}
+
+h1 {
+    font-family: var(--tipoTitulos);
+    font-size: 40pt;
+    color: var(--color2);
+    margin: 20pt;
+    font-size: 80pt;
+}
+
+h2 {
+    font-family: var(--tipoSubtitulos);
+    color: var(--color2);
+}
+
+
+.button{
+    border: solid var(--color2);
+    border-radius: 3em;
+    font-family: 'Syne', sans-serif;
+    padding: 1em;
+    width: fit-content;
+    margin: 2em;
+    margin: 0.5em;
+    color:var(--color1);
+    background-color: var(--color2);
+    border: solid var(--color1);
+}
+
+.button:hover{
+    background-color: var(--color1);
+    border: solid var(--color2);
+    color: var(--color2);
+    transition: 0.3s;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--color2);
+    color: var(--color1);
+    padding: 2em;
+}
+.product-p4 {
+    padding-top: 70px; /* Ajusta el valor según la altura de tu navbar */
 }

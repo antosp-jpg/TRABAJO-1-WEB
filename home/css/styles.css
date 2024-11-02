@@ -155,6 +155,35 @@ h2 {
     z-index: 2;
 }
 
+#store>.fotocafeteria{
+    display: flex;
+    justify-content: center;
+}
+#store>.fotocafeteria> img{
+width: 60vw;
+height: auto;
+}
+
+.button{
+    border: solid var(--color2);
+    border-radius: 3em;
+    font-family: 'Syne', sans-serif;
+    padding: 1em;
+    width: fit-content;
+    margin: 2em;
+    margin: 0.5em;
+    color:var(--color1);
+    background-color: var(--color2);
+    border: solid var(--color1);
+}
+
+.button:hover{
+    background-color: var(--color1);
+    border: solid var(--color2);
+    color: var(--color2);
+    transition: 0.3s;
+}
+
 /* FOOTER */
 footer {
     background-color: var(--color2);
