@@ -256,3 +256,34 @@ footer {
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+/* FORMULARIO */
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  background-image: url(../media/img/newsletter-background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+
+body  form  h2 {
+  font-size: 40pt;
+  color: var(--color1);
+}
+
+
+form{
+  font-family: var(--tipoGeneral);
+  background-color: var(--color2);
+  width: 40vw;
+  height: auto;
+  color: var(--color1);
+}
+
+
+
+  
