@@ -16,11 +16,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- FAVICON ACTUALIZAR CUANDO ESTÉ EL LOGO -->
 <link href="media/img/faviconfinal.png" rel="icon" type="image/png" />
-
+<link rel="stylesheet" href="css/lightbox.css">
 </head>
 <body>
  <!-- NAVBAR BOOTSTRAP -->
- <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #1E1E1E;">
+ <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1E1E1E;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="media/img/logoblanco.png" alt="" width="70" height="64">
@@ -69,18 +69,21 @@
 </section>-->
 
 <section class="product p-4">
-    <div class="container">
+    <div class="container px-0">
         <div class="row">
           <div class="col-2">
-            <img src="media/img/stockcafe.jpg" alt="Delicious stock cafe">
+            <img src="media/img/community1.png" alt="Delicious stock cafe">
+            <img src="media/img/community1.png" alt="Delicious stock cafe">
+            <img src="media/img/community1.png" alt="Delicious stock cafe">
+            <img src="media/img/community1.png" alt="Delicious stock cafe">
         </div>
-            <div class="col-4">
-                <img src="media/img/stockcafe.jpg" alt="Delicious stock cafe">
+            <div class="col-5">
+                <img src="media/img/granel.png" alt="Delicious stock cafe" onclick="openModal();currentSlide(1)" class="hover-shadow">
             </div>
-            <div class="col-6 align-self-start">
-                <h1>Product Name</h1>
+            <div class="col-5 align-self-start">
+                <h1>Chai Latte</h1>
                 <h2>Ingredients</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla sequi numquam, repudiandae quisquam officiis beatae molestiae incidunt inventore nihil animi! Non, cumque impedit. Nesciunt accusantium neque excepturi soluta possimus.</p>
+                <p>Black tea, infused with cinnamon, clove and other warming spices, and steamed milk, topped with foam for a sweet and spicy balance.</p>
                 
                 <div class="d-flex align-items-center my-3">
                     <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity(-1)">-</button>
@@ -89,12 +92,64 @@
                 </div>
                 
                 <p>Precio: <span id="coste">0</span></p>
-                <a href="#contenido" class="btn btn-primary mt-4">Add to Cart</a>
+                <a href="#contenido" class="button">Add to Cart</a>
             </div>
         </div>
     </div>
 </section>
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="media/img/community1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="media/img/community1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="media/img/community1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="media/img/community1.png" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="container row-4">
+    <div class="column">
+      <img class="demo" src="media/img/logo.png" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="media/img/logo.png" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="media/img/logo.png" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="media/img/logo.png" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+</div>
 
 <!--SIMILAR SECTION-->
 
@@ -183,7 +238,7 @@
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">I would like to receive emails and notifications from Ritual </label>
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="button">Submit</button>
   </div>
   </form>
 

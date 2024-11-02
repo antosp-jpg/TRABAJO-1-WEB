@@ -175,6 +175,7 @@ height: auto;
     color:var(--color1);
     background-color: var(--color2);
     border: solid var(--color1);
+    text-decoration: none;
 }
 
 .button:hover{
