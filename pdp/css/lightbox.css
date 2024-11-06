@@ -89,3 +89,10 @@
     vertical-align: -0.035em;
     fill: currentcolor;
 }
+
+@media screen and (max-width: 980px) { 
+
+    h1 {
+        font-size: 50pt;
+    }
+}

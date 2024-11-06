@@ -94,6 +94,7 @@ h1 {
 h2 {
     font-family: var(--tipoSubtitulos);
     color: var(--color2);
+    font-size: 30pt;
 }
 
 .product  h1{
@@ -287,4 +288,25 @@ form{
 
 
 
-  
+/* responsive texto */
+@media screen and (max-width: 980px) { 
+
+  h1 {
+      font-size: 50pt !important;
+      color: chartreuse;
+  }
+  h2{
+      font-size: 30pt !important;
+  }
+}
+@media screen and (max-width: 550px) { 
+
+  h1 {
+    color: aqua;
+      font-size: 35pt !important;
+  }
+  h2{
+      font-size: 20pt !important;
+      color: aqua;
+  }
+}

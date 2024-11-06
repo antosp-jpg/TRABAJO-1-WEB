@@ -126,6 +126,7 @@ h1 {
 h2 {
     font-family: var(--tipoSubtitulos);
     color: var(--color2);
+    font-size: 30pt;
 }
 
 h3{
@@ -220,13 +221,6 @@ footer p:hover {
 }
 
 
-@media screen and (max-width: 980px) { 
-
-    h1 {
-        font-size: 60pt;
-    }
-}
-
 
 @media screen and (max-width: 780px) { 
 
@@ -240,5 +234,25 @@ footer p:hover {
 
     .welcome {
         font-size: 55pt;
+    }
+}
+
+/* responsive texto */
+@media screen and (max-width: 980px) { 
+
+    h1 {
+        font-size: 50pt !important;
+    }
+    h2{
+        font-size: 30pt !important;
+    }
+}
+@media screen and (max-width: 550px) { 
+
+    h1 {
+        font-size: 35pt !important;
+    }
+    h2{
+        font-size: 20pt !important;
     }
 }
