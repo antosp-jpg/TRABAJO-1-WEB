@@ -71,6 +71,11 @@ body {
  }
   
 
+ .preview {
+  display: flex !important;
+}
+
+
   
 /* PERSONALIZACION MENU */
 .nav-link {
@@ -324,4 +329,11 @@ form{
   form{
     width: 60vw;
   }
+}
+
+
+@media screen and (max-width: 600px) { 
+
+    
+
 }

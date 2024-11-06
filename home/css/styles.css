@@ -57,6 +57,10 @@ body {
     width: 35%;
 }
 
+
+
+
+
 /* PERSONALIZACIÓN BOTON PRIMARIO BOOTSTRAP */
   .btn-primary {
     color: var(--color1);
@@ -238,6 +242,9 @@ footer p:hover {
 }
 
 
+
+
+
 @media screen and (max-width: 650px) { 
 
     .welcome {
@@ -254,6 +261,10 @@ footer p:hover {
     h2{
         font-size: 30pt !important;
     }
+
+    .claim {
+        font-size: 15pt !important;
+    }
 }
 @media screen and (max-width: 550px) { 
 
@@ -263,4 +274,41 @@ footer p:hover {
     h2{
         font-size: 20pt !important;
     }
+    .claim {
+        font-size: 14pt !important;
+    }
 }
+
+
+@media screen and (max-width: 600px) { 
+    header {
+        background-image: url(../media/img/stockcafe.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      #store>.fotocafeteria> img{
+        width: 80vw;
+        }
+}
+
+@media screen and (max-width: 767px) {
+    .footerimage {
+        display: none;
+    }
+
+    .chai {
+        padding-left: 0 !important; 
+        display: flex !important;
+        flex-direction: column-reverse;
+    }
+
+}    
+

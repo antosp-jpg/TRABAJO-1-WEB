@@ -21,7 +21,7 @@
  <!-- NAVBAR BOOTSTRAP -->
  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #1E1E1E;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="../home/index.html">
       <img src="media/img/logoblanco.png" alt="" width="70" height="64">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,17 +70,18 @@
 <section class="product p-4">
     <div class="container px-0">
         <div class="row">
-          <div class="row-6 col-md-2">
-            <img src="media/img/community1.png" alt="Delicious stock cafe" class="img-fluid">
-            <img src="media/img/community1.png" alt="Delicious stock cafe " class="img-fluid">
-            <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
-            <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
-            <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
-        </div>
-            <div class="col-md-5">
+          <div class="col-md-6">
                 <img src="media/img/granel.png" alt="Delicious stock cafe" onclick="openModal();currentSlide(1)" class="hover-shadow">
-            </div>
-            <div class="col-md-5 align-self-start">
+            <div class="row preview">
+              <img src="media/img/community1.png" alt="Delicious stock cafe" class="img-fluid">
+              <img src="media/img/community1.png" alt="Delicious stock cafe " class="img-fluid">
+              <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
+              <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
+              <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
+                </div>
+          </div>
+            
+            <div class="col-md-6 align-self-start">
                 <h1>Chai Latte</h1>
                 <h2>Ingredients</h2>
                 <p>Black tea, infused with cinnamon, clove and other warming spices, and steamed milk, topped with foam for a sweet and spicy balance.</p>
@@ -94,9 +95,10 @@
                 <p>Precio: <span id="coste">0</span></p>
                 <a href="#contenido" class="button">Add to Cart</a>
             </div>
-        </div>
-    </div>
+      </div>
+    </div> 
 </section>
+
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
