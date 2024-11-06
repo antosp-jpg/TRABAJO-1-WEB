@@ -80,6 +80,9 @@ body {
 
   
 /* PERSONALIZACION MENU */
+.nav-bar{
+    overflow-x: hidden;
+}
 .nav-link {
     color: var(--color1);
     font-family: var(--tipoSubtitulos);
@@ -148,9 +151,9 @@ h3{
 
 .bg-video-header {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .bg-video {
@@ -181,6 +184,7 @@ h3{
 #store>.fotocafeteria> img{
 width: 60vw;
 height: auto;
+max-width: 100%;
 }
 
 .button{
@@ -202,6 +206,10 @@ height: auto;
     border: solid var(--color2);
     color: var(--color2);
     transition: 0.3s;
+}
+
+#store{
+    max-width: 100%;
 }
 
 /* FOOTER */

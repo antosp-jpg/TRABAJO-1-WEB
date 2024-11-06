@@ -26,7 +26,7 @@ $('.responsive').slick({
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 450,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1

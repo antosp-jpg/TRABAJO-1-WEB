@@ -1,4 +1,4 @@
-//function costeTotal() {
+//FORMULARIO {
   //  "use strict";
   //  var entradas = document.getElementById("numero").value;
    // document.getElementById("coste").innerHTML = (entradas * 3) + "€";
@@ -26,22 +26,12 @@
     // Inicializa el coste al cargar la página
     costeTotal();
 
+// MODAL 
 
-
-
-    $('.lazy').slick({
-        lazyLoad: 'ondemand',
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        arrows: true,
-    });
-
-// Open the Modal
 function openModal() {
   document.getElementById("myModal").style.display = "block";
 }
 
-// Close the Modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
@@ -49,12 +39,10 @@ function closeModal() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -76,3 +64,43 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+
+// CARRUSEL
+
+$('.lazy').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 450,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+  });
+
+

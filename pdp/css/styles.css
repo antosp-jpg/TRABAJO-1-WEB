@@ -281,7 +281,7 @@ body  form  h2 {
 form{
   font-family: var(--tipoGeneral);
   background-color: var(--color2);
-  width: 40vw;
+  width: 45vw;
   height: auto;
   color: var(--color1);
 }
@@ -289,6 +289,9 @@ form{
 
 
 /* responsive texto */
+
+
+
 @media screen and (max-width: 980px) { 
 
   h1 {
@@ -297,6 +300,15 @@ form{
   }
   h2{
       font-size: 30pt !important;
+  }
+  form{
+    width: 50vw;
+  }
+  
+}
+@media screen and (max-width: 750px) { 
+  form{
+    width: 60vw;
   }
 }
 @media screen and (max-width: 550px) { 
@@ -308,5 +320,8 @@ form{
   h2{
       font-size: 20pt !important;
       color: aqua;
+  }
+  form{
+    width: 60vw;
   }
 }
