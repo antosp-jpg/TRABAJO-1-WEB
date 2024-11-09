@@ -250,6 +250,9 @@ footer p:hover {
     .imgmission {
         max-width: 40%;
     }
+    #mission {
+        padding-bottom: 2em;
+    }
 }
 
 
