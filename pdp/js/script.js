@@ -1,9 +1,12 @@
+$(document).ready(function () {
+  AOS.init();
+});
+
 //FORMULARIO {
   //  "use strict";
   //  var entradas = document.getElementById("numero").value;
    // document.getElementById("coste").innerHTML = (entradas * 3) + "€";
 //} 
-
     let quantity = 1; // Inicializa la cantidad
     const maxQuantity = 10; // Cantidad máxima
 

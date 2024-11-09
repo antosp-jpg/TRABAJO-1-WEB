@@ -302,17 +302,13 @@ form{
   border-top: 3px solid var(--colorFondo);
   border-bottom: 4px solid var(--colorFondo);
 }
+
 .marquee{
   font-size: 2vw;
   font-family: var(--tipoSubtitulos);
   line-height: 1.3;
   white-space: nowrap;
   animation: marquee 5s infinite linear;
-}
-.marquee:after{
-  content:  " MADRID * LA CORUÑA * BARCELONA *";
- 
-
 }
 @keyframes marquee {
   0%{

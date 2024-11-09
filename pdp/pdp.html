@@ -16,6 +16,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link href="media/img/faviconfinal.png" rel="icon" type="image/png" />
 <link rel="stylesheet" href="css/lightbox.css">
+
+      <!-- AOS LIBRARY -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
 </head>
 <body>
  <!-- NAVBAR BOOTSTRAP -->
@@ -67,12 +71,9 @@
 </div>
 </section>-->
 
-<div class="marqueecontainer">
-  <div class="marquee">
-      BLACK FRIDAY! FREE SHIPPING IN ALL ORDERS!
-  </div>
+<div class="marquee">
+  <p>Black Friday is here! FREE SHIPPING in all our products</p>
 </div>
-
 
 <section class="product p-4">
     <div class="container px-0">
@@ -163,10 +164,10 @@
 <!--SIMILAR SECTION-->
 
 <section class="Similar p-4">
-    <div class="container text-center">
+    <div data-aos="fade-up" class="container text-center">
         <h1>You might also like</h1>
     </div>
-    <div class="lazy">
+    <div  ata-aos="zoom-in" class="lazy">
         <div class="card">
             <img src="media/img/stockcafe.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -216,14 +217,14 @@
 
 <!--NEWSLETTER SECTION-->
 <section class="newsletter p-5">
-  <form class>
+  <form data-aos="fade-up" class>
     <div class="container p-5">
       <div class="container text-center pb-2">
         <h2>Join our newsletter!</h2>
       </div>
         <div class="container text-start p-0">
-        <p>Subscribe to get the latest content by email and to become a fellow member of our community. </p>
-    </div>
+          <p>Subscribe to get the latest content by email and to become a fellow member of our community. </p>
+        </div>
       <div class="row-4">
         <div class="mb-3">
           <label for="exampleInputFullName" class="form-label">Full Name</label>
@@ -242,7 +243,7 @@
           <label class="form-check-label" for="exampleCheck1">I agree with the terms and conditions of this website</label>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
+      </div>
   </form>
 </section>
 
@@ -285,6 +286,9 @@
                    
  <!-- JAVASCRIPT -->
   <script src="js/script.js"></script>
+
+  <!-- AOS LIBRARY -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 </body>
