@@ -52,42 +52,47 @@
 </nav>
 
 
-<!--PRODUCT SECTION
-<section class="product">
-<div class="container">
-    <div class="row">
- <div class="col-6">
-        <img src="media/img/stockcafe.jpg" alt="" >
-      </div>
-      <div class="col-6 align-self-start">
-        <h1>Product name</h1>
-        <h2>ingredients</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias nulla sequi numquam, repudiandae quisquam officiis beatae molestiae incidunt inventore nihil animi! Non, cumque impedit. Nesciunt accusantium neque excepturi soluta possimus.</p>
-        <input type="number" id="numero" min="1" max="15" placeholder="Número de entradas" onchange="costeTotal()" required>
-        <p>Precio: <span id="coste"></span></p>
-        <a href="#contenido" class="btn btn-primary mt-4">Add to cart</a>
-      </div>
-    </div>
-</div>
-</section>-->
 
 <div class="marquee">
-  <p>Black Friday is here! FREE SHIPPING in all our products</p>
+  <ul class="marquee__content">
+    <li class="marquee__item">&nbsp;FREE SHIPPING &bull; </li>
+    <li class="marquee__item">&nbsp;UNTIL 01/12/24 &bull; </li>
+    <li class="marquee__item">&nbsp;FREE SHIPPING &bull; </li>
+    <li class="marquee__item">&nbsp;UNTIL 01/12/24 &bull; </li>
+    <li class="marquee__item">&nbsp;FREE SHIPPING &bull; </li>
+    <li class="marquee__item">&nbsp;UNTIL 01/12/24 &bull; </li>
+    <li class="marquee__item">&nbsp;FREE SHIPPING &bull; </li>
+    <li class="marquee__item">&nbsp;UNTIL 01/12/24 &bull; </li>
+  
+   
+    
+    <!--  Repeated marquee items -->
+    <li class="marquee__item">&nbsp;FREE SHIPPING &bull; </li>
+    <li class="marquee__item">&nbsp;UNTIL 01/12/24 &bull; </li>
+    <li class="marquee__item">&nbsp;FREE SHIPPING &bull; </li>
+    <li class="marquee__item">&nbsp;UNTIL 01/12/24 &bull; </li>
+    <li class="marquee__item">&nbsp;FREE SHIPPING &bull; </li>
+    <li class="marquee__item">&nbsp;UNTIL 01/12/24 &bull; </li>
+    <li class="marquee__item">&nbsp;FREE SHIPPING &bull; </li>
+    <li class="marquee__item">&nbsp;UNTIL 01/12/24 &bull; </li>
+   
+  </ul>
 </div>
 
 <section class="product p-4">
-    <div class="container px-0">
-        <div class="row">
-          <div class="col-md-6">
-                <img src="media/img/granel.png" alt="Delicious stock cafe" onclick="openModal();currentSlide(1)" class="hover-shadow">
-            <div class="row preview">
-              <img src="media/img/community1.png" alt="Delicious stock cafe" class="img-fluid">
-              <img src="media/img/community1.png" alt="Delicious stock cafe " class="img-fluid">
-              <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
-              <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
-              <img src="media/img/community1.png" alt="Delicious stock cafe"class="img-fluid">
-                </div>
-          </div>
+  <div class="container px-0">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="photocontainer">
+              <img src="media/img/PF06.png" alt="Delicious stock cafe" onclick="openModal();currentSlide(1)" >
+            </div>
+          <div class="row preview justify-content-center pt-4">
+            <div class="col p-0"><img src="media/img/MODALF-08.png" alt="Delicious stock cafe" class="img-fluid"></div>
+            <div class="col p-0"><img src="media/img/MODALF-07.png" alt="Delicious stock cafe" class="img-fluid"></div>
+            <div class="col p-0"><img src="media/img/MODALF-05.png" alt="Delicious stock cafe" class="img-fluid"></div>
+            <div class="col p-0"><img src="media/img/MODALF-06.png" alt="Delicious stock cafe" class="img-fluid"></div>
+              </div>
+        </div>
             
             <div class="col-md-6 align-self-start">
                 <h1>Chai Latte</h1>
@@ -113,23 +118,26 @@
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="media/img/community1.png" style="width:100%">
+      <img src="media/img/MODALF-08.png" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="media/img/community1.png" style="width:100%">
+      <img src="media/img/MODALF-07.png" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 4</div>
-      <img src="media/img/community1.png" style="width:100%">
+      <img src="media/img/MODALF-05.png" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">4 / 4</div>
-      <img src="media/img/community1.png" style="width:100%">
+      <img src="media/img/MODALF-06.png" style="width:100%">
     </div>
+
+
+   
 
     <!-- Next/previous controls -->
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -141,22 +149,21 @@
     </div>
 
     <!-- Thumbnail image controls -->
-    <div class="container row-4">
+    <div class="container row-3 !important">
     <div class="column">
-      <img class="demo" src="media/img/logo.png" onclick="currentSlide(1)" alt="Nature">
+      <img class="demo" src="media/img/MODALF-08.png" onclick="currentSlide(1)" alt="Nature">
     </div>
 
     <div class="column">
-      <img class="demo" src="media/img/logo.png" onclick="currentSlide(2)" alt="Snow">
+      <img class="demo" src="media/img/MODALF-07.png" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo" src="media/img/MODALF-05.png" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+    <div class="column">
+      <img class="demo" src="media/img/MODALF-06.png" onclick="currentSlide(4)" alt="Mountains">
     </div>
 
-    <div class="column">
-      <img class="demo" src="media/img/logo.png" onclick="currentSlide(3)" alt="Mountains">
-    </div>
-
-    <div class="column">
-      <img class="demo" src="media/img/logo.png" onclick="currentSlide(4)" alt="Lights">
-    </div>
   </div>
 </div>
 </div>
@@ -169,51 +176,101 @@
     </div>
     <div  ata-aos="zoom-in" class="lazy">
         <div class="card">
-            <img src="media/img/stockcafe.jpg" class="card-img-top" alt="...">
+          <div class="photocontainer2">
+            <img src="media/img/PF04.png" class="card-img-top" alt="...">
+          </div>
             <div class="card-body">
-                <h5 class="card-title">Card Title 1</h5>
-                <p class="card-text">This is a wider card with supporting text below.</p>
+                <h5 class="card-title">Kenya AA</h5>
+                <p class="card-text">Acidez brillante, cuerpo medio y notas afrutadas y florales.</p>
             </div>
         </div>
         <div class="card">
-            <img src="media/img/stockcafe.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="photocontainer2">
+            <img src="media/img/PF05.png" class="card-img-top img-fluid" alt="...">
+          </div>
             <div class="card-body">
-                <h5 class="card-title">Card Title 2</h5>
-                <p class="card-text">This card has supporting text below.</p>
+                <h5 class="card-title">Java</h5>
+                <p class="card-text">Sabor equilibrado, y notas suaves de chocolate y especias.</p>
             </div>
         </div>
         <div class="card">
-            <img src="media/img/stockcafe.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="photocontainer2">
+            <img src="media/img/PF03.png" class="card-img-top img-fluid" alt="...">
+          </div>
             <div class="card-body">
-                <h5 class="card-title">Card Title 3</h5>
-                <p class="card-text">This is a wider card with supporting text below.</p>
+                <h5 class="card-title">Tarrazú</h5>
+                <p class="card-text">Acidez, cuerpo medio y notas de frutas cítricas y chocolate.</p>
             </div>
         </div>
         <div class="card">
-            <img src="media/img/stockcafe.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="photocontainer2">
+            <img src="media/img/PF02.png" class="card-img-top img-fluid" alt="...">
+          </div>
             <div class="card-body">
-                <h5 class="card-title">Card Title 4</h5>
-                <p class="card-text">This is a wider card with supporting text below.</p>
+                <h5 class="card-title">Mundo Novo</h5>
+                <p class="card-text">Sabor suave, y notas de chocolate, nuez y un ligero toque afrutado.</p>
             </div>
         </div>
         <div class="card">
-            <img src="media/img/stockcafe.jpg" class="card-img-top img-fluid" alt="...">
+          <div class="photocontainer2">
+            <img src="media/img/PF07.png" class="card-img-top img-fluid" alt="...">
+          </div>
             <div class="card-body">
-                <h5 class="card-title">Card Title 5</h5>
-                <p class="card-text">This is a wider card with supporting text below.</p>
+                <h5 class="card-title">Moka</h5>
+                <p class="card-text">Cuerpo entero y notas de chocolate y vainilla.</p>
             </div>
         </div>
         <div class="card">
-            <img src="media/img/stockcafe.jpg" class="card-img-top" alt="...">
+          <div class="photocontainer2">
+            <img src="media/img/PF01.png" class="card-img-top" alt="...">
+          </div>
             <div class="card-body">
-                <h5 class="card-title">Card Title 6</h5>
-                <p class="card-text">This is a wider card with supporting text below.</p>
+                <h5 class="card-title">Typica</h5>
+                <p class="card-text">Acidez suave y notas florales y afrutadas.</p>
             </div>
         </div>
     </div>
 </section>
 
-
+<div data-aos="zoom-in" class="responsive origins">
+  <div class="carousel-slideorigin">
+      <figure>
+          <img src="media/img/fc-02.png" alt="">
+          <!-- Contenedor para h2 y p que aparece al hacer hover -->
+          <div class="overlay">
+              <h2>Title 1</h2>
+              <p>This is a description for the first image.</p>
+          </div>
+      </figure>
+  </div>
+  <div class="carousel-slideorigin">
+      <figure>
+          <img src="media/img/fc-14.png" alt="">
+          <div class="overlay">
+              <h2>Title 2</h2>
+              <p>Description for the second image.</p>
+          </div>
+      </figure>
+  </div>
+  <div class="carousel-slideorigin">
+      <figure>
+          <img src="media/img/fc-06.png" alt="">
+          <div class="overlay">
+              <h2>Title 3</h2>
+              <p>Description for the third image.</p>
+          </div>
+      </figure>
+  </div>
+  <div class="carousel-slideorigin">
+      <figure>
+          <img src="media/img/fc-12.png" alt="">
+          <div class="overlay">
+              <h2>Title 4</h2>
+              <p>Description for the fourth image.</p>
+          </div>
+      </figure>
+  </div>
+</div>
 
 <!--NEWSLETTER SECTION-->
 <section class="newsletter p-5">
@@ -242,7 +299,7 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">I agree with the terms and conditions of this website</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="button">Submit</button>
       </div>
   </form>
 </section>

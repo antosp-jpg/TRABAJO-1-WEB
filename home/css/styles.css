@@ -75,6 +75,10 @@ body {
 }
 
 /* PERSONALIZACIÓN BOTONES + HOVER */
+
+#mission h1{
+    margin-bottom: 0 !important;
+}
 #mission i {
     color: var(--color2);
     font-size: 40pt;
@@ -166,16 +170,20 @@ h3{
     max-width: 100%;
 }
 
+#store h1 {
+    margin-bottom: 10pt;
+
+}
 .button{
     border: solid var(--color2);
     border-radius: 0.2em;
-    font-family: 'Syne', sans-serif;
     padding: 0.5em 0.5em;
     width: fit-content;
     color:var(--color1);
     background-color: var(--color2);
     border: solid var(--color1);
     text-decoration: none;
+    font-family: var(--tipoGeneral);
 }
 
 .button:hover{
@@ -213,6 +221,11 @@ h3{
 #starred h2 {
     margin: 0;
 }
+#starred button {
+    margin: 6pt;
+    margin-left: 0;
+}
+
 
 #mission {
     padding-bottom: 4em;
