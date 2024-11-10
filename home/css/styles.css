@@ -318,13 +318,6 @@ footer p:hover {
 
 
 @media screen and (max-width: 600px) { 
-    header {
-        background-image: url(../media/img/stockcafe.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-    }
 
     .row {
         margin-left: 0;

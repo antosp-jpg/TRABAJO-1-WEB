@@ -147,12 +147,16 @@ $('.lazy').slick({
   }
 
   start_marquee();
+
+
+// CARRUSEL IMAGENES
+
   $('.responsive').slick({
     arrows: false,
       dots: false,
       infinite: true,
       speed: 300,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2000,
       slidesToShow: 1,
       slidesToScroll: 1,
