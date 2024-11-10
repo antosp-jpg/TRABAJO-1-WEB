@@ -291,16 +291,10 @@ color: var(--color1);
 width: 75%;
 }
 
-  
-/* CARRUSEL PAGINA COMPLETAS  */
 
-.carousel-slideorigin {
-  position: relative;
-  display: inline-block;
-}
-.carousel-slideorigin{
-  height: 22em;
-  width: 10em;
+.responsive {
+  display: flex;
+  height: 275px;
 }
 
 

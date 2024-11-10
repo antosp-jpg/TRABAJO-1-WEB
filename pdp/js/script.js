@@ -2,7 +2,7 @@ $(document).ready(function () {
   AOS.init();
 });
 
-//FORMULARIO {
+//CARRITO {
 
     let quantity = 1; 
     const maxQuantity = 10; 
@@ -16,7 +16,7 @@ $(document).ready(function () {
     }
 
     function costeTotal() {
-        const pricePerItem = 3.50; // Cambia esto al precio real
+        const pricePerItem = 3.50;
         const totalCost = quantity * pricePerItem;
         document.getElementById('coste').innerText = totalCost;
     }
