@@ -3,16 +3,12 @@ $(document).ready(function () {
 });
 
 //FORMULARIO {
-  //  "use strict";
-  //  var entradas = document.getElementById("numero").value;
-   // document.getElementById("coste").innerHTML = (entradas * 3) + "€";
-//} 
-    let quantity = 1; // Inicializa la cantidad
-    const maxQuantity = 10; // Cantidad máxima
+
+    let quantity = 1; 
+    const maxQuantity = 10; 
 
     function updateQuantity(change) {
         quantity += change;
-        // Asegúrate de que la cantidad esté dentro del rango permitido
         if (quantity < 1) quantity = 1;
         if (quantity > maxQuantity) quantity = maxQuantity;
         document.getElementById('numero').innerText = quantity;
@@ -20,13 +16,12 @@ $(document).ready(function () {
     }
 
     function costeTotal() {
-        // Aquí deberías calcular el coste total basado en la cantidad
         const pricePerItem = 3.50; // Cambia esto al precio real
         const totalCost = quantity * pricePerItem;
         document.getElementById('coste').innerText = totalCost;
     }
 
-    // Inicializa el coste al cargar la página
+
     costeTotal();
 
 // MODAL 
@@ -101,12 +96,10 @@ $('.lazy').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
   });
 
+// MARQUEE
 
   function start_marquee() {
   

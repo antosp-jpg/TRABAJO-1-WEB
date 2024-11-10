@@ -1,9 +1,13 @@
+ /* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+ /* TIPOGRAFÍAS */
 
 @font-face {
     font-family:'Helvetica Bold';
@@ -47,59 +51,6 @@ body {
     vertical-align: middle;
  }
 
-.prueba {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.prueba img {
-    width: 35%;
-}
-
-
-/* PERSONALIZACION MENU */
-.nav-bar{
-    overflow-x: hidden;
-}
-.nav-link {
-    color: var(--color1);
-    font-family: var(--tipoSubtitulos);
-}
-
-/* PERSONALIZACION HERO */
-.welcome {
-    font-size: 75pt;
-    color: var(--color1);
-    font-family: var(--tipoTitulos);
-}
-
-/* PERSONALIZACIÓN BOTONES + HOVER */
-
-#mission h1{
-    margin-bottom: 0 !important;
-}
-#mission i {
-    color: var(--color2);
-    font-size: 40pt;
-    margin-top: 10pt;
-}
-
-#mission i:hover {
-    color: var(--color1);
-    font-size: 40pt;
-}
-
-.claim {
-    color: var(--color1);
-    font-family: var(--tipoLight);
-    font-size: 20pt;
-    padding-top: 1em;
-}
-
-p {
-    font-family: var(--tipoGeneral);
-}
 
 h1 {
     font-family: var(--tipoTitulos);
@@ -120,17 +71,62 @@ h3{
     color: var(--color2);
     font-size: 25pt;
 }
+p {
+    font-family: var(--tipoGeneral);
+}
 
-#store a {
-    color: var(--color2);
+.button{
+    border: solid var(--color2);
+    border-radius: 0.2em;
+    padding: 0.5em 0.5em;
+    width: fit-content;
+    color:var(--color1);
+    background-color: var(--color2);
+    border: solid var(--color1);
     text-decoration: none;
-    font-size: 15pt;
+    font-family: var(--tipoGeneral);
 }
 
-#store a:hover {
-    color: var(--color3);
+.button:hover{
+    background-color: var(--color1);
+    border: solid var(--color2);
+    color: var(--color2);
+    transition: 0.3s;
 }
 
+/* PERSONALIZACION MENU */
+
+.nav-bar{
+    overflow-x: hidden;
+}
+.nav-link {
+    color: var(--color1);
+    font-family: var(--tipoSubtitulos);
+}
+
+/* PERSONALIZACION HERO */
+
+.welcome {
+    font-size: 75pt;
+    color: var(--color1);
+    font-family: var(--tipoTitulos);
+}
+.prueba {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.prueba img {
+    width: 35%;
+}
+
+.claim {
+    color: var(--color1);
+    font-family: var(--tipoLight);
+    font-size: 20pt;
+    padding-top: 1em;
+}
 
 .bg-video-header {
     position: relative;
@@ -160,42 +156,30 @@ h3{
     z-index: 2;
 }
 
-#store>.fotocafeteria{
-    display: flex;
-    justify-content: center;
-}
-#store>.fotocafeteria> img{
-    width: 60vw;
-    height: auto;
-    max-width: 100%;
+/* MISSION SECTION */
+
+
+#mission {
+    padding-bottom: 4em;
 }
 
-#store h1 {
-    margin-bottom: 10pt;
-
+#mission h1{
+    margin-bottom: 0 !important;
 }
-.button{
-    border: solid var(--color2);
-    border-radius: 0.2em;
-    padding: 0.5em 0.5em;
-    width: fit-content;
-    color:var(--color1);
-    background-color: var(--color2);
-    border: solid var(--color1);
-    text-decoration: none;
-    font-family: var(--tipoGeneral);
-}
-
-.button:hover{
-    background-color: var(--color1);
-    border: solid var(--color2);
+#mission i {
     color: var(--color2);
-    transition: 0.3s;
+    font-size: 40pt;
+    margin-top: 10pt;
 }
 
-#store{
-    max-width: 100%;
+#mission i:hover {
+    color: var(--color1);
+    font-size: 40pt;
 }
+
+
+
+/* STARRED SECTION */
 
 .photocontainer {
     display: flex;
@@ -226,10 +210,40 @@ h3{
     margin-left: 0;
 }
 
+/* STORE SECTION */
 
-#mission {
-    padding-bottom: 4em;
+#store a {
+    color: var(--color2);
+    text-decoration: none;
+    font-size: 15pt;
 }
+
+#store a:hover {
+    color: var(--color3);
+}
+
+
+
+#store>.fotocafeteria{
+    display: flex;
+    justify-content: center;
+}
+#store>.fotocafeteria> img{
+    width: 60vw;
+    height: auto;
+    max-width: 100%;
+}
+
+#store h1 {
+    margin-bottom: 10pt;
+
+}
+
+
+#store{
+    max-width: 100%;
+}
+
 
 /* FOOTER */
 footer {
@@ -248,14 +262,13 @@ footer p:hover {
 }
 
 
+/* RESPONSIVE */
 
 @media screen and (max-width: 780px) { 
 
     .welcome {
         font-size: 60pt;
     }
-
-
 
 }
 

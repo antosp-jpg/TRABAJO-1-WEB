@@ -1,6 +1,8 @@
 $(document).ready(function () {
   AOS.init();
 });
+      // CARRUSEL RESPONSIVE COMMUNITY
+
 
 $('.responsive').slick({
   arrows: false,
@@ -37,9 +39,6 @@ $('.responsive').slick({
           slidesToScroll: 1,
           autoplaySpeed: 2000,
         }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
+      }   
     ]
   });
